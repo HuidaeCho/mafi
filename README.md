@@ -2,7 +2,7 @@
 
 Mafi is a MAth Friendly Interpreter. The orignal purpose of writing this program was to learn how to write a parser manually without the help of a lexical analyzer (e.g., lex) and a parser generator (e.g., yacc). I started writing this code in 1996 on UN*X and ported it to CellVic, a PDA developed by a Korean company, in 2001. Mafi supports graphic calculation using the GD image library.
 
-[Pink Julia](pink_julia.png "Pink Julia")
+![Pink Julia](pink_julia.png "Pink Julia")
 
 Homepage in Korean: https://oldgeni.isnew.info/cellvic.html#_mafi
 Manual in Korean: https://oldgeni.isnew.info/cellvic/mafi/index.html
