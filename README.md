@@ -4,9 +4,9 @@ Mafi is a MAth Friendly Interpreter. The orignal purpose of writing this program
 
 ![Pink Julia](pink_julia.png "Pink Julia")
 
-Homepage in Korean: https://oldgeni.isnew.info/cellvic.html#_mafi
-Manual in Korean: https://oldgeni.isnew.info/cellvic/mafi/index.html
-Examples in CellVic: https://oldgeni.isnew.info/cellvic/mafi/index.html#Examples
+* Homepage in Korean: https://oldgeni.isnew.info/cellvic.html#_mafi
+* Manual in Korean: https://oldgeni.isnew.info/cellvic/mafi/index.html
+* Examples in CellVic: https://oldgeni.isnew.info/cellvic/mafi/index.html#Examples
 
 ## License
 
