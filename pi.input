@@ -1,0 +1,49 @@
+n=20;
+if(n<1)
+  n=1;
+else
+  n=round(n);
+a=10000;
+b=0;
+c=14*n;
+d=0;
+e=0;
+f=M[](c,1,a/5);
+g=0;
+
+_v_width=-4;
+_v_prec=3;
+
+d=0;
+g=2*c;
+for(b=c;;d*=b){
+  d+=f[b,1]*a;
+  f[b,1]=d%--g;
+  d=fix(d/g--);
+  --b;
+  if(!b)
+    break;
+}
+c-=14;
+(e+fix(d/a))*1e-3,"";
+e=d%a;
+
+_v_prec=0;
+for(;;){
+  d=0;
+  g=2*c;
+  if(!g)
+    break;
+  for(b=c;;d*=b){
+    d+=f[b,1]*a;
+    f[b,1]=d%--g;
+    d=fix(d/g--);
+    --b;
+    if(!b)
+      break;
+  }
+  c-=14;
+  e+fix(d/a),"";
+  e=d%a;
+}
+

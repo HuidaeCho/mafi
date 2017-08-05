@@ -1,0 +1,12 @@
+OBJS	= mafi.o readline.o parse.o hash.o funcs.o _matrix.o @USE_GD@_3d.o
+
+CFLAGS	= -Wall @GD_INCLUDES@ @USE_GD@-DUSE_GD
+LFLAGS	= -lm @GD_LIBS@
+
+all:	mafi
+
+clean:
+	rm -f mafi $(OBJS)
+
+mafi:	$(OBJS)
+	$(CC) -o mafi $(OBJS) $(CFLAGS) $(LFLAGS)
