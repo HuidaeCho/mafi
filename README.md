@@ -8,7 +8,7 @@ Mafi is a MAth Friendly Interpreter. The orignal purpose of writing this program
 * Manual in Korean: https://oldgeni.isnew.info/cellvic/mafi/index.html
 * Examples in CellVic: https://oldgeni.isnew.info/cellvic/mafi/index.html#Examples
 
-The following example calculates $\pi$ up to 103 decimal places:
+The following example calculates pi up to 103 decimal places:
 ```
 n=26; // decimal places = 4*(n-1)+3; n=26 will print 103 decimal places
 if(n<1)
