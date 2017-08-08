@@ -8,6 +8,63 @@ Mafi is a MAth Friendly Interpreter. The orignal purpose of writing this program
 * Manual in Korean: https://oldgeni.isnew.info/cellvic/mafi/index.html
 * Examples in CellVic: https://oldgeni.isnew.info/cellvic/mafi/index.html#Examples
 
+The following example calculates $\pi$ up to 103 decimal places:
+```
+n=26; // decimal places = 4*(n-1)+3; n=26 will print 103 decimal places
+if(n<1)
+  n=1;
+else
+  n=round(n);
+a=10000;
+b=0;
+c=14*n;
+d=0;
+e=0;
+f=M[](c,1,a/5);
+g=0;
+
+_v_width=-4;
+_v_prec=3;
+
+d=0;
+g=2*c;
+for(b=c;;d*=b){
+  d+=f[b,1]*a;
+  f[b,1]=d%--g;
+  d=fix(d/g--);
+  --b;
+  if(!b)
+    break;
+}
+c-=14;
+(e+fix(d/a))*1e-3,"";
+e=d%a;
+
+_v_prec=0;
+for(;;){
+  d=0;
+  g=2*c;
+  if(!g)
+    break;
+  for(b=c;;d*=b){
+    d+=f[b,1]*a;
+    f[b,1]=d%--g;
+    d=fix(d/g--);
+    --b;
+    if(!b)
+      break;
+  }
+  c-=14;
+  e+fix(d/a),"";
+  e=d%a;
+}
+```
+
+Output:
+```
+3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821
+```
+
 ## License
 
 Copyright (C) 1996, 2001, Huidae Cho <https://idea.isnew.info>
